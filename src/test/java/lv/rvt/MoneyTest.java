@@ -47,4 +47,19 @@ public class MoneyTest {
         assertEquals(0, result3.euros());
         assertEquals(50, result3.cents());
     }
+
+    @Test
+    public void testLessThanMethod(){
+        Money mon1 = new Money(1, 66);
+        Money mon2 = new Money(0, 41);
+        boolean result1 = mon1.lessThan(mon2);
+
+        assertEquals(false, result1);
+        
+        Money mon3 = new Money(4, 0);
+        Money mon4 = new Money(4, 0);
+        boolean result2 = mon3.lessThan(mon4);
+
+        assertEquals(false, result2);
+    }
 }

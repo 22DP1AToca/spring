@@ -17,7 +17,7 @@ public class MainProgram {
         System.out.println();
 
         //Part 2
-        PaymentTerminal unicafeExactum = new PaymentTerminal(1000);
+        PaymentTerminal unicafeExactum = new PaymentTerminal();
 
         double change = unicafeExactum.eatAffordably(10);
         System.out.println("remaining change " + change);
@@ -27,6 +27,24 @@ public class MainProgram {
 
         change = unicafeExactum.eatHeartily(4.3);
         System.out.println("remaining change " + change);
+
+        System.out.println(unicafeExactum);
+        System.out.println();
+
+        //Part 3
+        unicafeExactum = new PaymentTerminal();
+
+        change = unicafeExactum.eatAffordably(10);
+        System.out.println("remaining change: " + change);
+
+        PaymentCard annesCard = new PaymentCard(7);
+
+        wasSuccessful = unicafeExactum.eatHeartily(annesCard);
+        System.out.println("there was enough money: " + wasSuccessful);
+        wasSuccessful = unicafeExactum.eatHeartily(annesCard);
+        System.out.println("there was enough money: " + wasSuccessful);
+        wasSuccessful = unicafeExactum.eatAffordably(annesCard);
+        System.out.println("there was enough money: " + wasSuccessful);
 
         System.out.println(unicafeExactum);
     }

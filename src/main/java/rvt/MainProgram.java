@@ -1,7 +1,9 @@
 package rvt;
 
+//Payment card Main Program
 public class MainProgram {
     public static void main(String[] args) {
+        //Part1
         PaymentCard petesCard = new PaymentCard(10);
 
         System.out.println("money " + petesCard.balance());
@@ -12,5 +14,20 @@ public class MainProgram {
         wasSuccessful = petesCard.takeMoney(4);
         System.out.println("successfully withdrew: " + wasSuccessful);
         System.out.println("money " + petesCard.balance());
+        System.out.println();
+
+        //Part 2
+        PaymentTerminal unicafeExactum = new PaymentTerminal(1000);
+
+        double change = unicafeExactum.eatAffordably(10);
+        System.out.println("remaining change " + change);
+
+        change = unicafeExactum.eatAffordably(5);
+        System.out.println("remaining change " + change);
+
+        change = unicafeExactum.eatHeartily(4.3);
+        System.out.println("remaining change " + change);
+
+        System.out.println(unicafeExactum);
     }
 }

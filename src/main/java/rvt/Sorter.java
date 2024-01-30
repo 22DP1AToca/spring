@@ -23,7 +23,7 @@ public class Sorter {
     public static int indexOfSmallestFrom(int[] array, int startIndex) {
         int[] newArray = new int[array.length - startIndex]; 
         for(int i = startIndex; i < newArray.length; i++){
-            newArray[i] = array[i];
+            newArray[i] = array[i + startIndex];
         }
 
         return indexOfSmallest(newArray);

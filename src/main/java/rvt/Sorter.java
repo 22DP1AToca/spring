@@ -37,6 +37,8 @@ public class Sorter {
     }
 
     public static void sort(int[] array) {
-
+        for(int i = 0; i < array.length; i++){
+            swap(array, i, indexOfSmallestFrom(array, i));
+        }
     }
 }

@@ -18,7 +18,7 @@ public class SorterTest {
     } 
     
     @Test
-    public void indexOfSmallestTest(){
+    public void indexOfSmallestTest(){  
         int[] numbers = {6, 5, 8, 7, 11};
         assertEquals(1, Sorter.indexOfSmallest(numbers));
     } 
@@ -43,5 +43,13 @@ public class SorterTest {
 
         Sorter.swap(numbers, 0, 3);
         assertArrayEquals(new int[]{4, 3, 5, 2, 8}, numbers);
+    }
+
+    @Test
+    public void sortTest(){
+        int[] numbers = {8, 3, 7, 9, 1, 2, 4};
+        Sorter.sort(numbers);
+
+        assertArrayEquals(new int[]{1, 2, 3, 4, 7, 8, 9}, numbers);
     }
 }

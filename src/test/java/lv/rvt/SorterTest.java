@@ -25,5 +25,7 @@ public class SorterTest {
         assertEquals(0, Sorter.indexOfSmallestFrom(numbers, 0));
         assertEquals(1, Sorter.indexOfSmallestFrom(numbers, 1));
         assertEquals(3, Sorter.indexOfSmallestFrom(numbers, 2));
+        assertEquals(3, Sorter.indexOfSmallestFrom(numbers, 3));
+        assertEquals(4, Sorter.indexOfSmallestFrom(numbers, 4));
     } 
 }

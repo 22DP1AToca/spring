@@ -12,12 +12,12 @@ public class Sorter {
     }
 
     public static int indexOfSmallest(int[] array){
-        for(int i2 = 0; i2 < array.length; i2++){
-            if(array[i2] == smallest(array)){
-                return i2;
+        for(int i = 0; i < array.length; i++){
+            if(array[i] == smallest(array)){
+                return i;
             }
         }
-        return 0;
+        return -1;
     }
 
     public static int indexOfSmallestFrom(int[] array, int startIndex) {
@@ -27,5 +27,16 @@ public class Sorter {
         }
     
         return indexOfSmallest(newArray) + startIndex;
+    }
+
+    public static void swap(int[] array, int index1, int index2) {
+        int temporary = array[index1];
+
+        array[index1] = array[index2];
+        array[index2] = temporary;
+    }
+
+    public static void sort(int[] array) {
+
     }
 }

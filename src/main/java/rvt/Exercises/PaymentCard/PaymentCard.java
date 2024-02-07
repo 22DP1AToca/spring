@@ -1,4 +1,4 @@
-package rvt;
+package rvt.Exercises.PaymentCard;
 
 public class PaymentCard {
     private double balance;

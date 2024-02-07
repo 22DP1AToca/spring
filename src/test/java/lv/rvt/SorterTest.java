@@ -6,8 +6,9 @@ import org.junit.Test;
 
 import com.fasterxml.jackson.annotation.JsonTypeInfo.As;
 
-import rvt.MainProgram;
-import rvt.Sorter;
+import rvt.Exercises.PaymentCard.MainProgramCard;
+import rvt.Exercises.Sorter.Sorter;
+
 import java.util.Arrays;
 
 public class SorterTest {

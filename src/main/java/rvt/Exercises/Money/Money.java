@@ -1,4 +1,4 @@
-package rvt;
+package rvt.Exercises.Money;
 
 public class Money {
     private final int euros;

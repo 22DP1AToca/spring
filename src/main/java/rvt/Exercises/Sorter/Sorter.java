@@ -1,4 +1,4 @@
-package rvt;
+package rvt.Exercises.Sorter;
 
 public class Sorter {
     public static int smallest(int[] array){

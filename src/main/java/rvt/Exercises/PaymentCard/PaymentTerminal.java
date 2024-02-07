@@ -1,4 +1,4 @@
-package rvt;
+package rvt.Exercises.PaymentCard;
 
 public class PaymentTerminal {
     private double money;  // amount of cash

@@ -1,7 +1,7 @@
-package rvt;
+package rvt.Exercises.PaymentCard;
 
 //Payment card Main Program
-public class MainProgram {
+public class MainProgramCard {
     public static void main(String[] args) {
         //Part1
         PaymentCard petesCard = new PaymentCard(10);

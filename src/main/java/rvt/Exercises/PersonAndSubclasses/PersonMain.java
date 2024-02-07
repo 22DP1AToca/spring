@@ -24,5 +24,24 @@ public class PersonMain {
         System.out.println(ollie2);
         ollie2.study();
         System.out.println(ollie2);
+
+        System.out.println();
+
+        //Part quatros
+        Teacher ada2 = new Teacher("Ada Lovelace", "24 Maddox St. London W1S 2QN", 1200);
+        Teacher esko2 = new Teacher("Esko Ukkonen", "Mannerheimintie 15 00100 Helsinki", 5400);
+        System.out.println(ada2);
+        System.out.println(esko2);
+
+        Student ollie3 = new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90028");
+
+        int i = 0;
+        while (i < 25) {
+        ollie3.study();
+        i = i + 1;
+        }
+        System.out.println(ollie3);
     }
+
+    
 }

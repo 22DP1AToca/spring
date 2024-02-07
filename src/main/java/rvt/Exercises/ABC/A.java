@@ -1,7 +1,7 @@
 package rvt.Exercises.ABC;
 
 public class A {
-    public static String a(){
-        return "A";
+    public static void a(){
+        System.out.println("A");
     }
 }

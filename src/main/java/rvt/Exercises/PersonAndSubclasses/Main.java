@@ -2,7 +2,7 @@ package rvt.Exercises.PersonAndSubclasses;
 
 import java.util.ArrayList;
 
-public class PersonMain {
+public class Main {
     public static void main(String[] args) {
         //Part unos
         Person ada = new Person("Ada Lovelace", "24 Maddox St. London W1S 2QN");

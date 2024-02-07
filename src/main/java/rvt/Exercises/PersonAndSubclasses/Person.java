@@ -10,6 +10,6 @@ public class Person {
     }
 
     public String toString(){
-        return name + " " + adress;
+        return name + "\n\t" + adress;
     }
 }

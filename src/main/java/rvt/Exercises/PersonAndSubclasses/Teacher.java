@@ -8,6 +8,6 @@ public class Teacher extends Person{
     }
 
     public String toString(){
-        return super.toString() + "\n " + "salary " + salary + " euro/month";
+        return super.toString() + "\n\t" + "salary " + salary + " euro/month";
     }
 }

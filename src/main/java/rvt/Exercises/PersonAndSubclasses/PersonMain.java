@@ -1,5 +1,7 @@
 package rvt.Exercises.PersonAndSubclasses;
 
+import java.util.ArrayList;
+
 public class PersonMain {
     public static void main(String[] args) {
         //Part unos
@@ -8,7 +10,7 @@ public class PersonMain {
         System.out.println(ada);
         System.out.println(esko);
 
-        System.out.println();
+        System.out.println("-------------------");
 
         //Part dos
         Student ollie = new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90028");
@@ -17,7 +19,7 @@ public class PersonMain {
         ollie.study();
         System.out.println("Study credits "+ ollie.credits());
 
-        System.out.println();
+        System.out.println("-------------------");
 
         //Part tres
         Student ollie2 = new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90028");
@@ -25,7 +27,7 @@ public class PersonMain {
         ollie2.study();
         System.out.println(ollie2);
 
-        System.out.println();
+        System.out.println("-------------------");
 
         //Part quatros
         Teacher ada2 = new Teacher("Ada Lovelace", "24 Maddox St. London W1S 2QN", 1200);
@@ -41,7 +43,21 @@ public class PersonMain {
         i = i + 1;
         }
         System.out.println(ollie3);
+
+        System.out.println("-------------------");
+        
+        //Part finko
+        ArrayList<Person> persons = new ArrayList<Person>();
+        persons.add(new Teacher("Ada Lovelace", "24 Maddox St. London W1S 2QN", 1200));
+        persons.add(new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90028"));
+    
+        printPersons(persons);
     }
 
     
+    public static void printPersons(ArrayList<Person> persons){
+        for(int i=0; i < persons.size(); i++){
+            System.out.println(persons.get(i));
+        }
+    }
 }

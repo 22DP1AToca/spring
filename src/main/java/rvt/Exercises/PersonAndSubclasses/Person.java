@@ -1,8 +1,8 @@
 package rvt.Exercises.PersonAndSubclasses;
 
 public class Person {
-    private String name;
-    private String adress;
+    protected String name;
+    protected String adress;
 
     public Person(String name, String adress){
         this.name = name;

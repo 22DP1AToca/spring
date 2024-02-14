@@ -9,6 +9,12 @@ public class Box{
         this.maxWeight = maxWeight;
     }
 
+    public double weight() {
+        double weight = 0;
+        // calculate the total weight of the items in the box
+        return weight;
+    }
+    
     public void add(Book book){
         if(weight + book.weight() <= maxWeight){
             items++;

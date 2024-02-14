@@ -3,13 +3,7 @@ import static org.junit.Assert.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Test;
-
-import com.fasterxml.jackson.annotation.JsonTypeInfo.As;
-
-import rvt.Exercises.PaymentCard.MainProgramCard;
 import rvt.Exercises.Sorter.Sorter;
-
-import java.util.Arrays;
 
 public class SorterTest {
     @Test

@@ -22,7 +22,11 @@ public class Employee {
     }
 
     public void print(Education education){
-
+        for (Person person : employeeList) {
+            if(matvhes educ){
+                print
+            }
+        }
     }
 }
 
